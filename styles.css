@@ -1,0 +1,74 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+/* BEGIN OPTION 2 */
+.nav-menu-2 .nav-item {
+  padding: 16px 24px;
+  transition: .3s ease;
+}
+
+.nav-menu-2 .nav-item:hover {
+  background-color: #35baf6;
+}
+
+.nav-menu-2 .nav-item:active {
+  background-color: #4dabf5;
+}
+
+.nav-menu-2 .nav-item.active{
+  background-color: #4dabf5;
+}
+/* END OPTION 2 */
+
+/* BEGIN OPTION 10 */
+.nav-menu-10 .nav-item {
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #bbb;
+  transition: .3s ease;
+}
+
+.nav-menu-10 .nav-item:hover {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-menu-10 .nav-item:active {
+  border: 1px solid #bbb;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-menu-10 .nav-item.active  {
+  border: 1px solid #bbb;
+  border-bottom: 1px solid transparent;
+}
+/* END OPTION 10 */
