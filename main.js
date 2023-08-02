@@ -3,7 +3,7 @@ const navItemList1 = document.querySelectorAll(".nav-item-1");
 
 navItemList1.forEach((n) => {
   n.addEventListener("click", () => {
-    navItemList2.forEach((n) => {
+    navItemList1.forEach((n) => {
       n.classList.remove("active");
     });
     n.classList.add("active");
