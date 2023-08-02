@@ -38,6 +38,20 @@ button {
 }
 
 /* BEGIN OPTION 2 */
+.nav-menu-1 .nav-item:hover {
+  color: #35baf6;
+}
+
+.nav-menu-1 .nav-item:active {
+  color: #4dabf5;
+}
+
+.nav-menu-1 .nav-item.active {
+  color: #4dabf5;
+}
+/* END OPTION 2 */
+
+/* BEGIN OPTION 2 */
 .nav-menu-2 .nav-item:hover {
   background-color: #35baf6;
 }
