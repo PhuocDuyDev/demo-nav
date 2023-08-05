@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #4dabf5;
+  --primary-tint-color: #35baf6;
+  --bg-color: #eee;
+  --gray-color: var(--gray-color);
+  --gray-tint-color: #ddd;
+  --white-color: #fff;
+}
+
 *,
 *::after,
 *::before {
@@ -18,7 +27,7 @@ body {
   justify-content: center;
   gap: 24px;
   flex-direction: column;
-  background-color: #eee;
+  background-color: var(--bg-color);
 }
 
 button {
@@ -39,29 +48,29 @@ button {
 
 /* BEGIN OPTION 2 */
 .nav-menu-1 .nav-item:hover {
-  color: #35baf6;
+  color: var(--primary-tint-color);
 }
 
 .nav-menu-1 .nav-item:active {
-  color: #4dabf5;
+  color: var(--primary-color);
 }
 
 .nav-menu-1 .nav-item.active {
-  color: #4dabf5;
+  color: var(--primary-color);
 }
 /* END OPTION 2 */
 
 /* BEGIN OPTION 2 */
 .nav-menu-2 .nav-item:hover {
-  background-color: #35baf6;
+  background-color: var(--primary-tint-color);
 }
 
 .nav-menu-2 .nav-item:active {
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 
 .nav-menu-2 .nav-item.active {
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 /* END OPTION 2 */
 
@@ -72,17 +81,36 @@ button {
 }
 
 .nav-menu-4 .nav-item:hover {
-  background-color: #35baf6;
+  background-color: var(--primary-tint-color);
 }
 
 .nav-menu-4 .nav-item:active {
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 
 .nav-menu-4 .nav-item.active {
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 /* END OPTION 4 */
+
+/* BEGIN OPTION 6 */
+.nav-menu-6 .nav-item {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.nav-menu-6 .nav-item:hover {
+  background-color: var(--primary-tint-color);
+}
+
+.nav-menu-6 .nav-item:active {
+  background-color: var(--primary-color);
+}
+
+.nav-menu-6 .nav-item.active {
+  background-color: var(--primary-color);
+}
+/* END OPTION 6 */
 
 /* BEGIN OPTION 8 */
 .nav-menu-8 .nav-item {
@@ -115,54 +143,54 @@ button {
 .nav-menu-8 .nav-item:hover::before {
   width: 100%;
   height: 2px;
-  background-color: #35baf6;
+  background-color: var(--primary-tint-color);
 }
 
 .nav-menu-8 .nav-item:active::before {
   width: 100%;
   height: 2px;
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 
 .nav-menu-8 .active.nav-item::before {
   width: 100%;
   height: 2px;
-  background-color: #4dabf5;
+  background-color: var(--primary-color);
 }
 
 .nav-menu-8 .nav-item:hover::after {
   width: 100%;
-  background: linear-gradient(#35baf6, #fff);
+  background: linear-gradient(var(--primary-tint-color), var(--white-color));
 }
 
 .nav-menu-8 .nav-item:active::after {
   width: 100%;
-  background: linear-gradient(#4dabf5, #fff);
+  background: linear-gradient(var(--primary-color), var(--white-color));
 }
 
 .nav-menu-8 .active.nav-item::after {
   width: 100%;
-  background: linear-gradient(#4dabf5, #fff);
+  background: linear-gradient(var(--primary-color), var(--white-color));
 }
 /* END OPTION 8 */
 
 /* BEGIN OPTION 10 */
 .nav-menu-10 .nav-item {
   border: 1px solid transparent;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .nav-menu-10 .nav-item:hover {
-  border: 1px solid #ddd;
+  border: 1px solid var(--gray-tint-color);
 }
 
 .nav-menu-10 .nav-item:active {
-  border: 1px solid #bbb;
+  border: 1px solid var(--gray-color);
   border-bottom: 1px solid transparent;
 }
 
 .nav-menu-10 .nav-item.active {
-  border: 1px solid #bbb;
+  border: 1px solid var(--gray-color);
   border-bottom: 1px solid transparent;
 }
 /* END OPTION 10 */

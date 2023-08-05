@@ -37,6 +37,19 @@ navItemList4.forEach((n) => {
 });
 /** END NAV ITEM 4 */
 
+/** BEGIN NAV ITEM 6 */
+const navItemList6 = document.querySelectorAll(".nav-item-6");
+
+navItemList6.forEach((n) => {
+  n.addEventListener("click", () => {
+    navItemList6.forEach((n2) => {
+      n2.classList.remove("active");
+    });
+    n.classList.add("active");
+  });
+});
+/** END NAV ITEM 6 */
+
 /** BEGIN NAV ITEM 8 */
 const navItemList8 = document.querySelectorAll(".nav-item-8");
 
