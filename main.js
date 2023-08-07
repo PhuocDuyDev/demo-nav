@@ -1,4 +1,4 @@
-/** BEGIN NAV ITEM 2 */
+/** BEGIN NAV ITEM 1 */
 const navItemList1 = document.querySelectorAll(".nav-item-1");
 
 navItemList1.forEach((n) => {
@@ -9,7 +9,7 @@ navItemList1.forEach((n) => {
     n.classList.add("active");
   });
 });
-/** END NAV ITEM 2 */
+/** END NAV ITEM 1 */
 
 /** BEGIN NAV ITEM 2 */
 const navItemList2 = document.querySelectorAll(".nav-item-2");
@@ -23,6 +23,19 @@ navItemList2.forEach((n) => {
   });
 });
 /** END NAV ITEM 2 */
+
+/** BEGIN NAV ITEM 3 */
+const navItemList3 = document.querySelectorAll(".nav-item-3");
+
+navItemList1.forEach((n) => {
+  n.addEventListener("click", () => {
+    navItemList3.forEach((n) => {
+      n.classList.remove("active");
+    });
+    n.classList.add("active");
+  });
+});
+/** END NAV ITEM 3 */
 
 /** BEGIN NAV ITEM 4 */
 const navItemList4 = document.querySelectorAll(".nav-item-4");
