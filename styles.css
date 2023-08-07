@@ -98,7 +98,7 @@ button {
   /* background-color: red; */
 }
 
-.nav-menu-3 .nav-item.active {
+.nav-menu-3 .nav-item.active::before {
   background-color: var(--primary-color);
 }
 /* END OPTION 3 */
@@ -117,20 +117,28 @@ button {
   left: 0;
 }
 
+.nav-menu-5 .nav-item:hover {
+  color: var(--primary-tint-color);
+}
 .nav-menu-5 .nav-item:hover::before {
   background-color: var(--primary-tint-color);
-  color: var(--primary-tint-color);
   display: block;
+}
+
+.nav-menu-5 .nav-item:active {
+  color: var(--primary-color);
 }
 
 .nav-menu-5 .nav-item:active::before {
   background-color: var(--primary-color);
-  color: var(--primary-color);
   /* background-color: red; */
 }
 
-.nav-menu-5 .nav-item.active {
+.nav-menu-5 .nav-item.active::before {
   background-color: var(--primary-color);
+}
+
+.nav-menu-5 .nav-item.active {
   color: var(--primary-color);
 }
 /* END OPTION 5 */
