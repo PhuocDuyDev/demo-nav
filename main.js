@@ -77,7 +77,7 @@ navItemList6.forEach((n) => {
 /** END NAV ITEM 6 */
 
 /** BEGIN NAV ITEM 7 */
-const navItemList7 = document.querySelectorAll(".nav-item-6");
+const navItemList7 = document.querySelectorAll(".nav-item-7");
 
 navItemList6.forEach((n) => {
   n.addEventListener("click", () => {
