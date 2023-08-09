@@ -50,6 +50,19 @@ navItemList4.forEach((n) => {
 });
 /** END NAV ITEM 4 */
 
+/** BEGIN NAV ITEM 5 */
+const navItemList5 = document.querySelectorAll(".nav-item-3");
+
+navItemList1.forEach((n) => {
+  n.addEventListener("click", () => {
+    navItemList5.forEach((n) => {
+      n.classList.remove("active");
+    });
+    n.classList.add("active");
+  });
+});
+/** END NAV ITEM 5 */
+
 /** BEGIN NAV ITEM 6 */
 const navItemList6 = document.querySelectorAll(".nav-item-6");
 

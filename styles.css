@@ -98,10 +98,50 @@ button {
   /* background-color: red; */
 }
 
-.nav-menu-2 .nav-item.active {
+.nav-menu-3 .nav-item.active::before {
   background-color: var(--primary-color);
 }
 /* END OPTION 3 */
+
+/* BEGIN OPTION 5 */
+.nav-menu-5 .nav-item {
+  position: relative;
+}
+.nav-menu-5 .nav-item::before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  left: 0;
+}
+
+.nav-menu-5 .nav-item:hover {
+  color: var(--primary-tint-color);
+}
+.nav-menu-5 .nav-item:hover::before {
+  background-color: var(--primary-tint-color);
+  display: block;
+}
+
+.nav-menu-5 .nav-item:active {
+  color: var(--primary-color);
+}
+
+.nav-menu-5 .nav-item:active::before {
+  background-color: var(--primary-color);
+  /* background-color: red; */
+}
+
+.nav-menu-5 .nav-item.active::before {
+  background-color: var(--primary-color);
+}
+
+.nav-menu-5 .nav-item.active {
+  color: var(--primary-color);
+}
+/* END OPTION 5 */
 
 /* BEGIN OPTION 4 */
 .nav-menu-4 {
